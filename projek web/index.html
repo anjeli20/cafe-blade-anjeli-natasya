@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Blade - Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg" style="background: linear-gradient(90deg, #e65100, #ff7043); box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#" style="font-weight: bold; font-size: 1.4rem; color: #fff !important;">
+        <img src="img/logo.png" width="40" class="me-2"> CAFE BLADE
+      </a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Selamat Datang di Cafe Blade</h1>
+    <p>Ayo pesan menu makanan dan minuman favorit kamu!</p>
+    <a class="btn btn-dark" href="#pendaftaran">Ayo Daftar Sekarang</a>
+  </div>
+
+  <div class="container my-5" id="tentang">
+    <h2 class="text-center mb-5 fw-bold">Tentang Cafe Kami</h2>
+    <div class="row align-items-center mb-5">
+      <div class="col-md-4 text-center">
+        <img src="img/segar.png" style="max-width: 250px;" alt="Segar">
+      </div>
+      <div class="col-md-8">
+        <h4 class="fw-bold">Bahan Segar dan Berkualitas</h4>
+        <p>Kami hanya menggunakan bahan-bahan terbaik dan segar untuk setiap hidangan. Setiap gigitan menghadirkan rasa alami yang lezat dan sehat.</p>
+        <a href="#menu" class="text-decoration-none fw-semibold">Lihat Menu Unggulan →</a>
+      </div>
+    </div>
+    <div class="row align-items-center mb-5">
+      <div class="col-md-4 text-center order-md-2">
+        <img src="img/pelayanan.png" style="max-width: 250px;" alt="Pelayanan">
+      </div>
+      <div class="col-md-8 order-md-1">
+        <h4 class="fw-bold">Pelayanan Ramah dan Cepat</h4>
+        <p>Staf kami dilatih untuk memberikan pelayanan terbaik dan cepat agar pelanggan merasa nyaman dan puas setiap saat.</p>
+        <a href="#kontak" class="text-decoration-none fw-semibold">Hubungi Kami →</a>
+      </div>
+    </div>
+    <div class="row align-items-center mb-5">
+      <div class="col-md-4 text-center">
+        <img src="img/menu.png" style="max-width: 250px;" alt="Menu">
+      </div>
+      <div class="col-md-8">
+        <h4 class="fw-bold">Menu Yang Beragam</h4>
+        <p>Dari nasi goreng hingga milkshake kekinian, kami selalu berinovasi untuk menghadirkan menu yang sesuai selera pelanggan dari berbagai kalangan.</p>
+        <a href="#menu" class="text-decoration-none fw-semibold">Coba Sekarang →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container text-center my-5" id="menu">
+    <h2 class="mb-5 fw-bold">Menu Makanan & Minuman</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+      <div class="col">
+        <div class="menu-card" onclick="tambahPesanan('Nasi Goreng Seafood', 45000)">
+          <img src="img/nasgor seafood.jpg" alt="Nasi Goreng Seafood">
+          <div>
+            <p class="nama-menu">Nasi Goreng Seafood</p>
+            <p class="harga-menu">Rp 45.000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="menu-card" onclick="tambahPesanan('Rice Bowl Chicken Curry', 38000)">
+          <img src="img/ricebowl curry.jpg" alt="Rice Bowl Chicken Curry">
+          <div>
+            <p class="nama-menu">Rice Bowl Chicken Curry</p>
+            <p class="harga-menu">Rp 38.000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+          <div class="menu-card" onclick="tambahPesanan('Rice Bowl BBQ', 38000)">
+              <img src="img/ricebowl bbq.jpeg" alt="Rice Bowl BBQ">
+              <div>
+                  <p class="nama-menu">Rice Bowl BBQ</p>
+                  <p class="harga-menu">Rp 38.000</p>
+                </div>
+            </div>
+        </div>
+      <div class="col">
+        <div class="menu-card" onclick="tambahPesanan('Spaghetti Carbonara', 40000)">
+          <img src="img/spaghetti carbonara.jpg" alt="Spaghetti Carbonara">
+          <div>
+            <p class="nama-menu">Spaghetti Carbonara</p>
+            <p class="harga-menu">Rp 40.000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="menu-card" onclick="tambahPesanan('Spaghetti Singapore', 42000)">
+          <img src="img/spaghetti singapore.jpg" alt="Spaghetti Singapore">
+          <div>
+            <p class="nama-menu">Spaghetti Singapore</p>
+            <p class="harga-menu">Rp 42.000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="menu-card" onclick="tambahPesanan('Pancake Ice Cream', 35000)">
+          <img src="img/pancake ice cream.jpg" alt="Pancake Ice Cream">
+          <div>
+            <p class="nama-menu">Pancake Ice Cream</p>
+            <p class="harga-menu">Rp 35.000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+          <div class="menu-card" onclick="tambahPesanan('Americano', 28000)">
+              <img src="img/americano.jpg" alt="Americano">
+              <div>
+                  <p class="nama-menu">Americano</p>
+                  <p class="harga-menu">Rp 28.000</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="menu-card" onclick="tambahPesanan('Cappucino', 30000)">
+                <img src="img/cappucino.jpg" alt="Cappucino">
+                <div>
+                    <p class="nama-menu">Cappucino</p>
+                    <p class="harga-menu">Rp 30.000</p>
+                </div>
+            </div>
+        </div>
+      <div class="col">
+        <div class="menu-card" onclick="tambahPesanan('Matcha', 33000)">
+          <img src="img/matcha.jpg" alt="Matcha">
+          <div>
+            <p class="nama-menu">Matcha</p>
+            <p class="harga-menu">Rp 33.000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="menu-card" onclick="tambahPesanan('Vanilla Milkshake', 35000)">
+          <img src="img/vanilla milkshake.jpg" alt="Vanilla Milkshake">
+          <div>
+            <p class="nama-menu">Vanilla Milkshake</p>
+            <p class="harga-menu">Rp 35.000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="menu-card" onclick="tambahPesanan('Iced Tea', 20000)">
+          <img src="img/iced tea.jpg" alt="Iced Tea">
+          <div>
+            <p class="nama-menu">Iced Tea</p>
+            <p class="harga-menu">Rp 20.000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="menu-card" onclick="tambahPesanan('Lemon Tea', 20000)">
+          <img src="img/lemon tea.jpg" alt="Lemon Tea">
+          <div>
+            <p class="nama-menu">Lemon Tea</p>
+            <p class="harga-menu">Rp 20.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <h3 class="mb-3">Kalkulator Pembayaran</h3>
+    <div class="mb-3">
+      <label>Jumlah Item Dibeli</label>
+      <input type="text" class="form-control" id="jumlahItem" readonly>
+    </div>
+    <div class="mb-3">
+      <label>Total Harga</label>
+      <input type="text" class="form-control" id="totalHarga" readonly>
+    </div>
+    <div class="mb-3">
+      <label>Uang Dibayar</label>
+      <input type="number" class="form-control" id="uangBayar" placeholder="Masukkan nominal">
+    </div>
+    <button class="btn btn-success" onclick="hitungKembalian()">Hitung Kembalian</button>
+    <p class="mt-3" id="hasilKembalian"></p>
+  </div>
+
+  <div class="container my-5" id="pendaftaran">
+    <h3 class="mb-4 text-center fw-bold">Daftar Member Baru</h3>
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <form>
+              <div class="mb-3">
+                <label for="namaLengkap" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="namaLengkap" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="alamatLengkap" class="form-label">Alamat Lengkap</label>
+                <input type="text" class="form-control" id="alamatLengkap" required>
+              </div>
+              <div class="mb-3">
+                <label for="jenisKelamin" class="form-label">Jenis Kelamin</label>
+                <select class="form-select" id="jenisKelamin" required>
+                  <option value="" selected>Pilih Jenis Kelamin</option>
+                  <option value="Laki-laki">Laki-laki</option>
+                  <option value="Perempuan">Perempuan</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Daftar Sekarang</button>
+            </form>
+        </div>
+    </div>
+  </div>
+
+  <div class="container py-4 text-center" id="kontak">
+    <h5>Hubungi Kami</h5>
+    <a href="https://wa.me/6281264292907" target="_blank" style="margin-right: 15px; text-decoration: none;">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="30" style="vertical-align:middle"> WhatsApp
+    </a>
+    <a href="mailto:anjelinatasha0@gmail.com" style="text-decoration: none;">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="30" style="vertical-align:middle"> Gmail
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
