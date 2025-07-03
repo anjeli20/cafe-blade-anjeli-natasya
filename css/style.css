@@ -1,4 +1,3 @@
-/* Menambahkan smooth scroll untuk navigasi internal */
 html {
   scroll-behavior: smooth;
 }
@@ -32,7 +31,6 @@ body {
   height: auto;
 }
 
-/* Gaya untuk Kartu Menu */
 .menu-card {
   background-color: #fff;
   border-radius: 10px;
